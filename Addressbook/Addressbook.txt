@@ -37,5 +37,9 @@ UC6 Retrieve person from city or state
 select first_name from addressbookTable where state = 'maharstra' group by state;
 select city, first_name from addressbookTable where city = 'bsl' group by city;
 
+UC7 Size of addressbook by city or state
+select  count(first_name) from addressbookTable where state = 'maharstra' group by state;
+select count(first_name) from addressbookTable where city = 'bsl' group by city;
+
 
 
