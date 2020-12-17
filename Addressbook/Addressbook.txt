@@ -33,4 +33,9 @@ update addressbookTable set phone = '9637074619' where first_name = 'chetan';
 UC5 Delete entry
 DELETE FROM addressbookTable where first_name = 'ram';
 
+UC6 Retrieve person from city or state
+select first_name from addressbookTable where state = 'maharstra' group by state;
+select city, first_name from addressbookTable where city = 'bsl' group by city;
+
+
 
