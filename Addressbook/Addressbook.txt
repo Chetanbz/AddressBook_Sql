@@ -26,3 +26,11 @@ UC3 Add Address
 insert into addressbookTable (first_name,last_name,address,city,state,zip,phone,email) values
 ('chetan','zambare','shree nagar','bsl','maharstra',425201,96370,'zambare.c@gmail'),
 ('Ram','patil','shree nagar','bsl','maharstra',425201,963875415,'zambare.c@gmail');
+
+UC4 Edit existing phone based on first name
+update addressbookTable set phone = '9637074619' where first_name = 'chetan';
+
+UC5 Delete entry
+DELETE FROM addressbookTable where first_name = 'ram';
+
+
