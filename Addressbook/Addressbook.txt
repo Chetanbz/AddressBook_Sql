@@ -41,5 +41,13 @@ UC7 Size of addressbook by city or state
 select  count(first_name) from addressbookTable where state = 'maharstra' group by state;
 select count(first_name) from addressbookTable where city = 'bsl' group by city;
 
+U8 Sort based on first name, city
+select * from addressbookTable order by first_name asc;
+select * from addressbookTable order by city asc;
+
+Uc9 Add addressbook name and type
+
+alter table addressbookTable add addressbook_name varchar(200) after sr_no;
+alter table addressbookTable add type varchar(200) after addressbook_name;
 
 
