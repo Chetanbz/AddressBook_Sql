@@ -50,4 +50,7 @@ Uc9 Add addressbook name and type
 alter table addressbookTable add addressbook_name varchar(200) after sr_no;
 alter table addressbookTable add type varchar(200) after addressbook_name;
 
+UC 10 Get count 
+ select  count(first_name) from addressbookTable where addressbook_name = 'Sport' group by addressbook_name;
+
 
