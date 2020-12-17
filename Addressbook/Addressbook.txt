@@ -21,3 +21,8 @@ primary key(sr_no));
 
 ALTER TABLE company RENAME TO addressbookTable;
 
+UC3 Add Address
+
+insert into addressbookTable (first_name,last_name,address,city,state,zip,phone,email) values
+('chetan','zambare','shree nagar','bsl','maharstra',425201,96370,'zambare.c@gmail'),
+('Ram','patil','shree nagar','bsl','maharstra',425201,963875415,'zambare.c@gmail');
