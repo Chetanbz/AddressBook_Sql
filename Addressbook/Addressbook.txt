@@ -53,4 +53,10 @@ alter table addressbookTable add type varchar(200) after addressbook_name;
 UC 10 Get count 
  select  count(first_name) from addressbookTable where addressbook_name = 'Sport' group by addressbook_name;
 
+UC11 Same person different type
+  insert into addressbookTable (addressbook_name, type,  first_name,last_name,address,city,state,zip,phone,email) values
+  ("Sport" ,  'friend', 'Raman','zambare','shree nagar','up','maharstra',425201,96370,'zambare.c@gmail'),
+  ("Sport" ,  'family', 'Raman','zambare','shree nagar','up','maharstra',425201,96370,'zambare.c@gmail');
+
+
 
